@@ -56,10 +56,8 @@ body.home {
   line-height: 1.65;
   font-weight: 400;
   color: var(--text);
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
 }
-
-.description p:last-of-type { margin-bottom: 2rem; }
 
 .practice-areas {
   font-size: 1rem;
