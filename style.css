@@ -1,0 +1,290 @@
+/* ========================
+   JUPITER LAW — STYLES
+   ======================== */
+
+/* ---- DESIGN TOKENS ---- */
+:root {
+  --bg: #F9F8F4;
+  --white: #FFFFFF;
+  --black: #1A1A1A;
+  --text: #1A1A1A;
+  --border: #D9D9D9;
+  --accent-purple: #5B5BEA;
+  --accent-green: #76FFA8;
+  --accent-green-hover: #5CE892;
+}
+
+/* ---- RESET ---- */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ---- BASE ---- */
+body {
+  font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========================
+   HOME PAGE
+   ======================== */
+
+body.home {
+  font-stretch: normal;
+  background: var(--bg);
+}
+
+.header { padding: 2.5rem 5vw; }
+
+.logo-full { height: 140px; width: auto; display: block; }
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 5vw;
+  min-height: 300px;
+  align-items: center;
+}
+
+.description { text-align: center; padding: 3rem 4rem; }
+
+.description p {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.practice-areas {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.divider-vertical {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+}
+
+.contact { padding: 3rem 4rem; text-align: center; }
+
+.contact h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.contact-hours {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.contact-hours-time {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.contact-link {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover { color: var(--accent-purple); }
+
+.cta-button {
+  display: inline-block;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--black);
+  background: var(--accent-green);
+  padding: 0.85rem 2.5rem;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-top: 2.5rem;
+  transition: background 0.25s ease;
+}
+
+.cta-button:hover { background: var(--accent-green-hover); }
+
+/* ========================
+   POLICY PAGES
+   ======================== */
+
+body.policy { background: var(--white); }
+
+.page-header { background: var(--bg); padding: 2rem 5vw 2.5rem; }
+
+.page-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.logo-link { text-decoration: none; display: block; }
+
+.logo-text-img { height: 2.4rem; width: auto; display: block; }
+
+.back-link {
+  font-size: 0.9rem;
+  color: var(--accent-purple);
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.back-link:hover { opacity: 0.75; }
+
+.page-title {
+  font-family: 'Archivo', sans-serif;
+  font-stretch: 125%;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--accent-purple);
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+}
+
+.page-date {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.content { max-width: 1200px; margin: 0 auto; padding: 0 5vw; }
+
+.section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+.section:last-child { border-bottom: none; }
+
+.section-heading {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.35;
+  padding-top: 0.1rem;
+}
+
+.section-body p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 0.85rem;
+}
+
+.section-body p:last-child { margin-bottom: 0; }
+
+.section-body ul {
+  margin: 0.5rem 0 0.85rem 0;
+  padding-left: 1.5em;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.section-body ul li { margin-bottom: 0.35rem; }
+
+.section-body a {
+  color: var(--text);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.section-body a:hover { color: var(--accent-purple); }
+
+.section-body em { font-style: italic; }
+
+/* ========================
+   FOOTER
+   ======================== */
+
+.footer {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer--home {
+  padding: 4rem 2rem 3rem;
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+.footer--policy {
+  padding: 3rem 2rem 2.5rem;
+  border-top: 2px solid var(--black);
+  margin-top: 3rem;
+}
+
+.footer-disclaimer {
+  font-size: 0.85rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.footer-links { font-size: 0.85rem; color: var(--text); }
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover { color: var(--accent-purple); }
+
+/* ========================
+   RESPONSIVE
+   ======================== */
+
+@media (max-width: 768px) {
+  /* Home page */
+  .header { padding: 1.5rem; }
+  .logo-full { height: 90px; }
+  .main-content { grid-template-columns: 1fr; padding: 0 1.5rem; margin: 1rem auto 0; min-height: unset; }
+  .divider-vertical { display: none; }
+  .description { padding: 1.5rem 0; }
+  .description p { margin-bottom: 1.25rem; }
+  .contact { padding: 1.5rem 0 1.25rem; border-top: 1px solid var(--border); }
+  .contact h2 { margin-bottom: 1.25rem; }
+  .contact-hours-time { margin-bottom: 1rem; }
+  .cta-button { display: inline-block; margin-top: 1.5rem; padding: 0.85rem 2.5rem; }
+  .footer--home { padding: 2rem 1.5rem 1.5rem; margin-top: 1.5rem; }
+
+  /* Policy pages */
+  .page-header { padding: 1.5rem 1.5rem 2rem; }
+  .page-title { font-size: 2rem; }
+  .content { padding: 0 1.5rem; }
+  .section { grid-template-columns: 1fr; gap: 0.75rem; padding: 2rem 0; }
+  .section-heading { font-size: 1.25rem; }
+  .footer--policy { margin: 2rem 1.5rem 0; padding: 2rem 1rem; }
+}
