@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jupiter Law | Online Law Firm</title>
+  <meta name="description" content="Jupiter Law is an Australian law firm based in the Northern Rivers region. We offer simple legal solutions for businesses and individuals.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+    :root {
+      --bg: #F9F8F4;
+      --white: #FFFFFF;
+      --black: #1A1A1A;
+      --text: #1A1A1A;
+      --text-muted: #666666;
+      --border: #D9D9D9;
+      --accent-purple: #5B5BEA;
+      --accent-green: #76FFA8;
+      --accent-green-hover: #5CE892;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-stretch: normal;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- HEADER / LOGO ---- */
+    .header {
+      padding: 2.5rem 5vw;
+    }
+
+    .logo-full {
+      height: 140px;
+      width: auto;
+      display: block;
+    }
+
+    /* ---- MAIN CONTENT ---- */
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 5vw;
+      min-height: 300px;
+      align-items: center;
+    }
+
+    /* Left column - description */
+    .description {
+      text-align: center;
+      padding: 3rem 4rem;
+    }
+
+    .description p {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 2rem;
+    }
+
+    .practice-areas {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+
+    /* Vertical divider */
+    .divider-vertical {
+      width: 1px;
+      background: var(--border);
+      align-self: stretch;
+    }
+
+    /* Right column - contact */
+    .contact {
+      padding: 3rem 4rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: var(--text);
+    }
+
+    .contact-hours {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-hours-time {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-link {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--text);
+      text-decoration: underline;
+      margin-bottom: 0.5rem;
+      transition: color 0.2s ease;
+    }
+
+    .contact-link:hover {
+      color: var(--accent-purple);
+    }
+
+    .cta-button {
+      display: inline-block;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      color: var(--black);
+      background: var(--accent-green);
+      padding: 0.85rem 2.5rem;
+      border-radius: 100px;
+      text-decoration: none;
+      margin-top: 2.5rem;
+      transition: background 0.25s ease;
+    }
+
+    .cta-button:hover {
+      background: var(--accent-green-hover);
+    }
+
+    /* ---- FOOTER ---- */
+    .footer {
+      text-align: center;
+      padding: 4rem 2rem 3rem;
+      border-top: 1px solid var(--border);
+      max-width: 1200px;
+      margin: 2rem auto 0;
+    }
+
+    .footer-disclaimer {
+      font-size: 0.85rem;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+      font-weight: 400;
+    }
+
+    .footer-copy {
+      font-size: 0.85rem;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+      font-weight: 400;
+    }
+
+    .footer-links {
+      font-size: 0.85rem;
+      color: var(--text);
+    }
+
+    .footer-links a {
+      color: var(--text);
+      text-decoration: underline;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-purple);
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 768px) {
+      .header {
+        padding: 1.5rem;
+      }
+
+      .logo-full {
+        height: 90px;
+      }
+
+      .main-content {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+        margin: 1rem auto 0;
+        min-height: unset;
+      }
+
+      .divider-vertical {
+        display: none;
+      }
+
+      .description {
+        padding: 1.5rem 0;
+      }
+
+      .description p {
+        margin-bottom: 1.25rem;
+      }
+
+      .contact {
+        padding: 1.5rem 0 1.25rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .contact h2 {
+        margin-bottom: 1.25rem;
+      }
+
+      .contact-hours-time {
+        margin-bottom: 1rem;
+      }
+
+      .cta-button {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.85rem 2.5rem;
+      }
+
+      .footer {
+        padding: 2rem 1.5rem 1.5rem;
+        margin: 1.5rem auto 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="/"><img src="images/logo-icon.webp" alt="Jupiter Law" class="logo-full"></a>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="description">
+      <p>Jupiter Law is an Australian law firm based in the Northern Rivers region. We offer simple legal solutions for businesses and individuals.</p>
+      <div class="practice-areas">Employment | Commercial | Property</div>
+    </div>
+
+    <div class="divider-vertical"></div>
+
+    <div class="contact">
+      <h2>Contact us</h2>
+      <p class="contact-hours">WEEKDAYS</p>
+      <p class="contact-hours-time">8AM – 5PM AEDT</p>
+      <a href="tel:0285295010" class="contact-link">(02) 8529 5010</a>
+      <a href="mailto:hello@jupiter.law" class="contact-link">hello@jupiter.law</a>
+      <a href="https://calendar.app.google/cuDabTL9LMwgVfsM7" target="_blank" rel="noopener" class="cta-button">Book a free call</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-disclaimer">Liability limited by a scheme approved under Professional Standards Legislation.</p>
+    <p class="footer-copy">&copy; Jupiter Law 2026</p>
+    <p class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> &times; <a href="terms.html">Terms of Use</a>
+    </p>
+  </footer>
+
+</body>
+</html>
