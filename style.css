@@ -35,6 +35,8 @@ body.home {
 
 .header { padding: 2.5rem 5vw; }
 
+.logo-heading { margin: 0; padding: 0; line-height: 0; font-size: 0; }
+
 .logo-full { height: 140px; width: auto; display: block; }
 
 .main-content {
@@ -54,8 +56,10 @@ body.home {
   line-height: 1.65;
   font-weight: 400;
   color: var(--text);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
+
+.description p:last-of-type { margin-bottom: 2rem; }
 
 .practice-areas {
   font-size: 1rem;
